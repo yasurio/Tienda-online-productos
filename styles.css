@@ -1,0 +1,34 @@
+.at-header{
+  background-color:yellow;
+}
+.at-text-name{
+  font-weight: bold;
+}
+.at-principal-section{
+  padding: 40px 10px;
+}
+.at-principal-section-fieldset{
+  border:none ;
+  box-shadow: none ;
+}
+.at-principal-section-form-search{
+  border: 1px solid lightgray ;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ignora el tamaño del border */
+  padding: 10px;
+  margin:16px 30px;
+  width: calc(100% - 60px); /* Calcula el tamaño total menos el marign 30*2 */
+  
+  /*Centralizarlo
+    display :block;
+    margin:16px auto;
+  */
+  /*Para que te deje meter el margin por arriba y abajo y el padding tambien
+    display:inline-block;
+  */  
+  /* Esto es igual que border
+  border-width: 1px;
+  border-style: solid;
+  border-color: lightgray;
+  */
+}

@@ -1,0 +1,105 @@
+.at-shopping-cart {
+    position: fixed;
+    right: 5px;
+    right: -261px;
+    top: 103px;
+    border: 1px solid;
+    transition: 1s right;
+    box-shadow: 1px 1px 1px rgba(146, 146, 146, 0.8);
+
+    &-products {
+        position: absolute;
+        top: 35px;
+        left: -53px;
+        background: $gray-300;
+        padding: 10px 12px;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 4px;
+        border-top: 1px solid;
+        border-left: 1px solid;
+        border-bottom: 1px solid;
+        box-shadow: -1px 2px 1px 0px rgba(146, 146, 146, 0.8);
+    }
+
+    .fas {
+        font-size: 25px;
+        color: $primary;
+    }
+
+    &-products-number {
+        content: "";
+        background: $danger;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        left: -10px;
+        bottom: -10px;
+        font-size: 12px;
+        color: $white;
+        text-align: center;
+        padding-top: 3px;
+        font-weight: bold;
+    }
+
+    &-list {
+        width: 100%;
+        padding-left: 28px;
+        margin-bottom: 0;
+    }
+
+    &-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+        border-bottom: 1px solid;
+        padding-bottom: 6px;
+        justify-content: space-between;
+        &:last-child {
+            margin-bottom: 0;
+            border-bottom: 0;
+        }
+    }
+
+    &-text {
+        display: none;
+        margin-left: 10px;
+        margin-bottom: 0;
+        color: $black;
+        max-width: 230px;
+        font-weight: bold;
+    }
+
+    &-content {
+        display: flex;
+        align-items: center;
+        min-height: 90px;
+        width: 259px;
+        background: $gray-300;
+        padding: 14px 18px 14px 8px;
+    }
+
+    &-total {
+        display: block;
+        text-align: right;
+        padding: 6px 18px;
+        font-weight: bold;
+        background: $primary;
+        color: $white;
+    }
+
+    &-price {
+        display: inline-block;
+        font-weight: bold;
+        margin-left: 8px;
+    }
+
+    &:hover {
+        .at-shopping-cart-products, .at-shopping-cart-content {
+            background: darken($gray-300, 4%);
+            text-decoration: none;
+        }
+    }
+}

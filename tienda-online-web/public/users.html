@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Road to Angular - Training</title>
+</head>
+
+<body class="d-flex flex-column h-100">
+
+</body>
+<!--Header-->
+<header class="at-header ">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="assets/images/frontend.png" alt="Angular Image" width="30">
+            <spam>training</spam>
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Categorías
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Categoría #1</a>
+                        <a class="dropdown-item" href="#">Categoría #2</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Otras cattegorías</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Mis pedidos</a>
+                </li>
+            </ul>
+            <div>
+                <label class="text-white">Hola,</label>
+                <a class="font-weight-bold text-white" href="#">Alberto Amado Rey</a>
+                <button type="button" class="btn btn-primary">Cerrar Sesión</button>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- Main -->
+<main>
+    <section>
+        <div class="container">
+            <h2 class="mt-4">Mis Pedidos</h2>
+            <form action="">
+                <legend name="legend formulario" hidden></legend>
+                <div class="row">
+                    <div class="form-group col-4 mb-3">
+                        <label for="Nombre">Nombre</label>
+                        <input type="text" class="form-control" placeholder="Escribe tu nombre..." aria-label="Username"
+                            aria-describedby="basic-addon1">
+                    </div>
+
+                    <div class="form-group col-4 mb-3">
+                        <label for="Apellidos">Apellidos</label>
+                        <input type="text" class="form-control" placeholder="Escribe tus apellidos..."
+                            aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+
+                    <div class="form-group col-4 mb-3">
+                        <label for="Usuario">Usuario</label>
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="text" class="form-control" placeholder="Escribe tu nombre de usuarios..."
+                                aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+
+                    <div class="form-group col-4 mb-3">
+                        <label for="Contrasenya">Contraseña</label>
+                        <input type="text" class="form-control" placeholder="Escribe una contraseña..."
+                            aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+
+                    <div class="form-group col-4 mb-3">
+                        <label for="RepiteContrasenya">Repite Contraseña</label>
+                        <input type="text" class="form-control" placeholder="Repite la contraseña..."
+                            aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 mb-3">
+                        <input class="btn btn-primary" value="Guardar" vlaue="submit">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!--Toast -->
+    <div class="toast ml-auto" role="status" data-delay="10" data-autohide="false">
+        <div class="toast-header">
+            <strong class="mr-auto text-primary">Toast</strong>
+            <small class="text-muted">3 mins ago</small>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                <span aria-hidden="true">×</span>
+            </button>
+        </div>
+        <div class="toast-body">
+            Hey, there! This is a Bootstrap 4 toast.
+        </div>
+    </div>
+    
+</main>
+<!--Footer -->
+<footer class=" bg-light mt-auto">
+    <div class="d-flex">
+        <p class="p-2">Tienda online en boostrap para el proyecto en formacion : Road to angular</p>
+        <img src="./assets/images/bootstrap.png" alt="Imagen de productos 1" title="Boostrap img" class="ml-auto p-2"
+            height="42px" width="42px">
+    </div>
+</footer>
+
+<!-- vendors files -->
+
+<script src="/vendors/jquery-slim/dist/jquery.slim.js"></script>
+<script src="/vendors/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+<script>
+    $('.toast').toast('show');
+    $('.toast').toast({delay:10, animation:false});
+
+</script>
+</body>
+
+</html>

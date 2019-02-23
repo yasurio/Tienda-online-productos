@@ -1,0 +1,17 @@
+<article class="at-article mb-4">
+    <div class="card">
+        <img [src]="data.img"
+            class="card-img-top at-article-img" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{data.description}}</h5>
+            <p class="card-text">{{data.ean13}}</p>
+            <div class="d-flex justify-content-between">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <a href="#" class="btn btn-outline-danger">Ver</a>
+                    <a href="#" class="btn btn-outline-danger js-addCart" id="addCart-0" (click)="hdAddItemButton($event)">Al carrito</a>
+                </div>
+                <span class="card-text"><small class="text-muted">{{data.price}}</small></span>
+            </div>
+        </div>
+    </div>
+</article>

@@ -1,0 +1,6 @@
+<ul class="row list-unstyled">
+  <li *ngFor="let productItem of product" class="col-sm-3">
+    <app-product [data]="productItem"(addCartEvent)="onAddCart($event)"></app-product>
+  </li>
+  
+</ul>

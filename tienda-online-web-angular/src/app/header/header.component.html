@@ -1,0 +1,31 @@
+<!--<h1>
+  {{titulo}}
+</h1>-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">
+    <img [src]="logo.img" width="30" alt="Logo">
+    {{logo.titulo}}
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item active" *ngFor="let item of nav" [ngClass]="{'dropdown': item.subnav}">
+              <a [href] = "item.url" [attr.data-toggle]="item.subnav ? 'dropdown' : null" [ngClass]="{'dropdown-toggle': item.subnav}"
+                  class="nav-link" [title]="item.titulo">{{item.title}}</a>
+              <ul *ngIf="item.subnav " class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li *ngFor="let subItem of item.subnav">
+                      <a class="dropdown-item" [href]="subItem.url" [title]="subItem.title">{{subItem.text}}</a>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+    <div class="text-light mr-2"><span>Hola, </span><a href="user.html" title="Alejandro Sevillano"
+        class="text-white font-weight-bold">{{name}} {{username}}</a></div>
+    <a class="btn btn-danger" href="login.html">Cerrar sesión</a>
+  </div>
+</nav>

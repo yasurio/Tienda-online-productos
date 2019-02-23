@@ -1,0 +1,9 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<app-header [logo]="logoObj" [nav]="navObjList"></app-header>
+<app-filter [product]="productObjList"></app-filter>
+<div class="container">
+<app-container-products [product]="productObjList" (itemButton)="hdAddItemButton($event)"></app-container-products>
+</div>
+<app-footer></app-footer>
+<app-shopping-cart></app-shopping-cart>
+<router-outlet></router-outlet>

@@ -1,0 +1,14 @@
+.at-module-shopping-cart {
+    &-item {
+        margin-bottom: 25px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &-img {
+        max-width: 70px;
+    }
+    &-quantity {
+        width: 70px;
+    }
+}

@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Road to Angular - Training</title>
+</head>
+
+<body class="d-flex flex-column h-100">
+
+    <!-- header + navbar -->
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/frontend.png" width="30" alt="Logo">
+                training
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Categorías
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="#">Categoría 1</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Categoría 2</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Categoría 3</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Categoría 4</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="orders.html" tabindex="-1">Mis pedidos</a>
+                    </li>
+                </ul>
+                <div class="text-light mr-2"><span>Hola, </span><a href="user.html" title="Alejandro Sevillano"
+                        class="text-white font-weight-bold">Alejandro
+                        Sevillano</a></div>
+                <a class="btn btn-danger" href="#">Cerrar sesión</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- End header + navbar -->
+
+    <main class="pt-5 pb-4">
+        <div class="container">
+            <h2 class="mb-4">Mis datos</h2>
+            <form novalidate>
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <label for="validationTooltip01">Nombre</label>
+                        <input type="text" class="form-control is-valid" id="validationTooltip01"
+                            placeholder="Escribe tu nombre..." value="" required>
+                        <div class="invalid-tooltip">
+                            El formato de nombre es incorrecto.
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="validationTooltip02">Apellidos</label>
+                        <input type="text" class="form-control" id="validationTooltip02"
+                            placeholder="Escribe tus apellidos..." value="" required>
+                        <div class="invalid-tooltip">
+                            El formato de apellido es incorrecto.
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="validationTooltipUsername">Usuario</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                            </div>
+                            <input type="text" class="form-control is-invalid" id="validationTooltipUsername"
+                                placeholder="Indica un nombre de usuario..."
+                                aria-describedby="validationTooltipUsernamePrepend" required>
+                            <div class="valid-tooltip">
+                                Buen nombre de usuario!
+                            </div>
+                            <div class="invalid-tooltip">
+                                Nombre de usuario no disponible.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <label for="validationTooltip03">Contraseña</label>
+                        <input type="password" class="form-control" id="validationTooltip03"
+                            placeholder="Escribe una contraseña..." required>
+                        <div class="invalid-tooltip">
+                            Contraseña errónea.
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="validationTooltip04">Repite la contraseña</label>
+                        <input type="text" class="form-control is-invalid" id="validationTooltip04"
+                            placeholder="Repite la contraseña..." required>
+                        <div class="invalid-tooltip">
+                            Las contraseñas no coinciden.
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary" type="submit">Guardar</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- footer -->
+
+    <footer class="at-footer bg-dark text-light mt-auto">
+        <div class="container-fluid pt-3 pb-3">
+            <div class="row">
+                <div class="col-8">
+                    <p class="font-weight-lighter font-italic mb-0 pt-3">Tienda online generada en bootstrap para el
+                        proyecto de
+                        formación: Road to Angular</p>
+                </div>
+                <div class="col-4">
+                    <img src="assets/images/bootstrap.png" class="at-footer-img float-right" alt="Logo bootstrap">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- End footer -->
+
+    <div class="toast" style="position: absolute; top: 80px; right: 20px;">
+        <div class="toast-header bg-danger text-white">
+            <strong class="mr-auto">Aviso</strong>
+            <small>11 mins ago</small>
+            <button type="button" class="ml-2 mb-1 close text-white" data-dismiss="toast" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="toast-body">
+            ¡Datos de usuario actualizados!
+        </div>
+    </div>
+
+    <!-- vendors files -->
+
+    <script src="/vendors/jquery-slim/dist/jquery.slim.js"></script>
+    <script src="/vendors/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script>
+        (function () {
+            $('.toast').toast({
+                autohide: true,
+                delay: 5000
+            });
+
+            $('.toast').toast('show');
+
+            let array = document.querySelectorAll('.at-article');
+
+            for (let i = 0; i < array.length; i++) {
+                console.log(array[i]);
+            }
+        })
+    </script>
+</body>
+
+</html>

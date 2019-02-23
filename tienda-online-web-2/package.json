@@ -1,0 +1,31 @@
+{
+    "name": "bootstrap-training",
+    "version": "1.0.0",
+    "description": "Project bootstrap training",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build-css": "node-sass --include-path scss scss/styles.scss public/css/styles.css",
+        "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    },
+    "author": "Alejandro Sevillano",
+    "license": "ISC",
+    "dependencies": {
+        "@types/bootstrap": "^4.2.2",
+        "@types/jquery": "^3.3.29",
+        "bootstrap": "^4.2.1",
+        "browserify": "^16.2.3",
+        "gulp": "3.9.1",
+        "jquery-slim": "^3.0.0",
+        "run-sequence": "^2.2.1",
+        "tsify": "^4.0.1",
+        "typescript": "^3.3.3",
+        "vinyl-source-stream": "^2.0.0"
+    },
+    "devDependencies": {
+        "express": "^4.16.4",
+        "node-sass": "^4.11.0",
+        "nodemon": "^1.18.9"
+    }
+}
